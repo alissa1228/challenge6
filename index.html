@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="./imgs/dice.png"/>
+    <title>Random Number Game</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="container">
+        <h2>Random Number Game</h2>
+        <h3>Generate a number between 0 and <span ></span></h3>
+        <form class="js-form">
+            <input type="range" max="200" min="0" list="tickmarks">
+                <datalist id="tickmarks">
+                    <option value="0"></option>
+                    <option value="50"></option>
+                    <option value="100"></option>
+                    <option value="150"></option>
+                    <option value="200"></option>
+                </datalist>
+            </input>
+        </form>
+        <form class="js-guess">
+            <p>Guess the number : <input type="number" max="200" min="0"  style="width:50px;"></input>
+            <input id="play" type="submit" value="play!"></input>
+            </p>
+            <div class="js-result">
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
